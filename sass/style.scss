@@ -1,0 +1,167 @@
+/******************************************************************************
+General
+******************************************************************************/
+
+
+@import "bourbon/bourbon", "neat/neat", "base/base";
+
+
+
+/**************************************
+Colors
+**************************************/
+
+
+//Generic Colors
+$white: #eee;
+$black: #444;
+
+//Color Uses
+$bg: $white;
+$bg-dark: $black;
+
+
+
+/**************************************
+Defaults
+**************************************/
+
+
+
+body {
+	background: $bg;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper-content {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+//Fonts
+
+$sans-serif: "Raleway";
+
+h1, h2, h3, h4, h5 {
+	font-family: serif;
+}
+
+p {
+	font-family: $sans-serif, sans-serif;
+}
+
+.lead {
+	font-size: 1.125em;
+}
+
+
+
+/**************************************
+Footer
+**************************************/
+
+
+
+footer {
+	p {
+		font-weight: 200;
+		text-align: center;
+	}
+}
+
+
+
+/******************************************************************************
+Navigation
+******************************************************************************/
+
+
+
+//Nav List
+nav {
+	background: $bg-dark;
+	font-family: $sans-serif, 'sans-serif';
+
+	.nav-title {
+		padding-top: 30px;
+		font-size: 20px;
+		text-align: center;
+
+		font-size: 1.5em;
+
+		a {
+			color: $white;
+			&:hover {
+				color: darken($white, 20%);
+			}
+		}
+		
+	}
+}
+.navbar {
+	text-align: center;
+
+	padding-top: 20px;
+	padding-bottom: 15px;
+	box-shadow: 0 8px 6px -6px #333;
+	li {
+		display: inline-block;
+		padding: 10px;
+		a {
+			color: $white;
+			&:hover {
+				color: darken($white, 20%);
+			}
+		}
+	}
+}
+
+
+
+/******************************************************************************
+Index.html
+******************************************************************************/
+
+
+
+.wrapper {
+	background: url(../img/ocean.jpg);
+}
+.main-slider-bg {
+
+	height: 500px;
+	background: url("/img/ocean.jpg") no-repeat center center fixed;
+	background-size: cover;
+
+}
+
+.main-slider-overlay {
+	background: transparent;
+	margin: 50px auto;
+}
+
+
+
+/******************************************************************************
+About
+******************************************************************************/
+/******************************************************************************
+Contact
+******************************************************************************/
+
+
+
+.contact-submit {
+	@include fill-parent;
+}
+
+
+
+/******************************************************************************
+Donation
+******************************************************************************/
+/******************************************************************************
+Mission
+******************************************************************************/
