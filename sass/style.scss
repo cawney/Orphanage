@@ -28,6 +28,15 @@ Defaults
 
 
 
+//Media Queries
+$small: 320px;
+$medium: 667px;
+$large: 1104px;
+
+$phone: $small;
+$phone-ls: $medium;
+$tablet: $large;
+
 body {
 	background: $bg;
 	width: 100%;
@@ -46,6 +55,10 @@ $sans-serif: "Raleway";
 
 h1, h2, h3, h4, h5 {
 	font-family: serif;
+}
+
+h1 {
+	font-size: 1.125em;
 }
 
 p {
@@ -84,8 +97,11 @@ Navigation
 
 //Nav List
 nav {
+	z-index: 999;
+
 	background: $bg-dark;
 	font-family: $sans-serif, 'sans-serif';
+	box-shadow: 0 8px 6px -6px #333;
 
 	.nav-title {
 		padding-top: 30px;
@@ -108,7 +124,7 @@ nav {
 
 	padding-top: 20px;
 	padding-bottom: 15px;
-	box-shadow: 0 8px 6px -6px #333;
+	
 	li {
 		display: inline-block;
 		padding: 10px;
@@ -141,6 +157,7 @@ Index.html
 	background: transparent;
 	margin: auto;
 	padding-top: 50px;
+	text-align: center;
 }
 
 
@@ -177,6 +194,11 @@ Donation
 	//background: steelblue;
 	button {
 		@include fill-parent;
+		margin-bottom: 25px;
+		//Media Query
+		@media screen and (min-width: $tablet) {
+			@include outer-container(75%);
+		}
 	}
 	
 	ul {

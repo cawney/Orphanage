@@ -212,6 +212,9 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: serif; }
 
+h1 {
+  font-size: 1.125em; }
+
 p {
   font-family: "Raleway", sans-serif; }
 
@@ -233,8 +236,10 @@ footer {
 Navigation
 ******************************************************************************/
 nav {
+  z-index: 999;
   background: #444;
-  font-family: "Raleway", "sans-serif"; }
+  font-family: "Raleway", "sans-serif";
+  box-shadow: 0 8px 6px -6px #333; }
   nav .nav-title {
     padding-top: 30px;
     font-size: 20px;
@@ -248,8 +253,7 @@ nav {
 .navbar {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 15px;
-  box-shadow: 0 8px 6px -6px #333; }
+  padding-bottom: 15px; }
   .navbar li {
     display: inline-block;
     padding: 10px; }
@@ -269,7 +273,8 @@ Index.html
 .main-slider-overlay {
   background: transparent;
   margin: auto;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 /******************************************************************************
 About
@@ -289,7 +294,17 @@ Contact
 Donation
 ******************************************************************************/
 .wrapper-donate button {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 25px; }
+  @media screen and (min-width: 1104px) {
+    .wrapper-donate button {
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper-donate button::after {
+        clear: both;
+        content: "";
+        display: table; } }
 .wrapper-donate ul {
   display: flex;
   flex-wrap: wrap;
