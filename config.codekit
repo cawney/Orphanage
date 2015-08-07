@@ -49,6 +49,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/room.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.35971e+07,
+		"inputAbbreviatedPath": "\/img\/room.jpg",
+		"outputAbbreviatedPath": "\/img\/room.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/img\/sand.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -58,7 +69,7 @@
 		"outputAbbreviatedPath": "\/img\/sand.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,

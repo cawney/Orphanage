@@ -13,7 +13,7 @@ Colors
 
 
 //Generic Colors
-$white: #eee;
+$white: #efefef;
 $black: #444;
 
 //Color Uses
@@ -43,10 +43,14 @@ body {
 	margin: 0 auto;
 }
 
+.wrapper {
+	@include clearfix;
+}
+
 .wrapper-content {
 	width: 95%;
 	margin: 0 auto;
-	//margin-top: 50px;
+	margin-top: 50px;
 }
 
 //Fonts
@@ -58,7 +62,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 1.125em;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
 }
 
 p {
@@ -67,6 +79,17 @@ p {
 
 .lead {
 	font-size: 1.125em;
+}
+
+.text-muted {
+	font-weight: 200;
+	color: grey;
+	a {
+		color: grey;
+		&:hover {
+			color: darken(grey, 20%);
+		}
+	}
 }
 
 
@@ -104,11 +127,10 @@ nav {
 	box-shadow: 0 8px 6px -6px #333;
 
 	.nav-title {
-		padding-top: 30px;
-		font-size: 20px;
-		text-align: center;
 
-		font-size: 1.5em;
+		padding-top: 30px;
+		text-align: center;
+		font-size: 2.5em;
 
 		a {
 			color: $white;
@@ -122,7 +144,7 @@ nav {
 .navbar {
 	text-align: center;
 
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	
 	li {
@@ -165,6 +187,81 @@ Index.html
 /******************************************************************************
 About
 ******************************************************************************/
+
+
+
+.wrapper-about {
+
+	img {
+		border-radius: 15px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	hr {
+		@include span-columns(12);
+	}
+
+	.promo-info {
+		@include outer-container;
+	}
+	
+	.content-left {
+		//Content on left side of screen
+		@include span-columns(12);
+		@media screen and (min-width: $phone-ls) {
+			@include span-columns(8);	
+		}
+		
+	}
+
+	.content-right {
+		//Content on right side of screen
+		@include span-columns(12);
+
+		@media screen and (min-width: $phone-ls) {
+			@include span-columns(8);
+			@include omega;	
+		}
+
+		
+	}
+
+	.img-left {
+		//Image on left side of screen
+		@include span-columns(12);
+
+		@media screen and (min-width: $phone-ls) {
+			@include span-columns(4);	
+		}
+
+		
+	}
+
+	.img-right {
+		//Image on right side of screen
+		@include span-columns(12);
+
+		@media screen and (min-width: $phone-ls) {
+			@include span-columns(4);
+			@include omega;	
+		}
+	}
+
+	.orphanage-info {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.map {
+		@include fill-parent;
+	}
+}
+
+
+
 /******************************************************************************
 Contact
 ******************************************************************************/
@@ -173,8 +270,24 @@ Contact
 
 .wrapper-contact {
 	margin-top: 50px;
-	h1 {
-		font-size: 2em;
+	form {
+		margin-bottom: 50px;
+	}
+
+	.contact-extra-section {
+		@include outer-container;
+	}
+
+	.contact-extra {
+		@include span-columns(12);
+		text-align: center;
+		@media screen and (min-width: $phone-ls) {
+			@include span-columns(4);
+		}
+	}
+
+	i {
+		margin-bottom: 10px;
 	}
 }
 
