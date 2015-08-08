@@ -8,6 +8,25 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="css/style.css">
+
+	    <style type="text/css">
+	      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+	    </style>
+	    <script type="text/javascript"
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFESgnCK8kJOkpFJnBnQf16sYjsU4exfU">
+	    </script>
+	    <script type="text/javascript">
+	      function initialize() {
+	        var mapOptions = {
+	          center: { lat: -34.397, lng: 150.644},
+	          zoom: 8
+	        };
+	        var map = new google.maps.Map(document.getElementById('map-canvas'),
+	            mapOptions);
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    </script>
+
 </head>
 <body>
 	<header>
@@ -52,9 +71,9 @@
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias in delectus officia voluptatum corrupti provident id, eum doloribus laboriosam magnam adipisci, repudiandae excepturi ducimus minus vitae, nulla dolores cumque quam. 
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aspernatur animi blanditiis enim doloremque rerum magni maxime facilis eius, quis, quo, similique, beatae eos quibusdam sint eveniet doloribus ipsam explicabo.</p>
 			</div> <!-- /.orphanage-info -->
-			<div class="map">
-					<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Calle%20Cubillas%20294%E2%80%93323A%20Centro%2084030%20Nogales%2C%20SON%20Mexico&key=AIzaSyAFESgnCK8kJOkpFJnBnQf16sYjsU4exfU" allowfullscreen></iframe> 
-				</div> <!-- /.map -->
+			<div id="map-canvas"></div>
+
+			
 			<div class="wrapper-about wrapper-content">
 			<div class="staff">
 			<br>
