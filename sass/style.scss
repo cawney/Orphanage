@@ -267,17 +267,24 @@ Contact
 	margin-top: 50px;
 	form {
 		margin-bottom: 50px;
+		@media screen and (min-width: $phone-ls+1px) {
+			@include span-columns(8);
+		}
 	}
 
 	.contact-extra-section {
 		@include outer-container;
+		@media screen and (min-width $phone-ls) {
+			//Moves the entire extra section to the side once we get to bigger screens
+			@include span-columns(4);
+		}
 	}
 
-	.contact-extra {
+	.contact-extra { //The 3 small sections in the extra section
 		@include span-columns(12);
 		text-align: center;
-		@media screen and (min-width: $phone-ls) {
-			@include span-columns(4);
+		@media screen and (min-width: $tablet) {
+			@include span-columns(4); 
 		}
 	}
 

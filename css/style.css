@@ -389,6 +389,14 @@ Contact
   margin-top: 50px; }
   .wrapper-contact form {
     margin-bottom: 50px; }
+    @media screen and (min-width: 668px) {
+      .wrapper-contact form {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 65.8807828007%; }
+        .wrapper-contact form:last-child {
+          margin-right: 0; } }
   .wrapper-contact .contact-extra-section {
     max-width: 68em;
     margin-left: auto;
@@ -397,6 +405,14 @@ Contact
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width 667px) {
+      .wrapper-contact .contact-extra-section {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 31.7615656014%; }
+        .wrapper-contact .contact-extra-section:last-child {
+          margin-right: 0; } }
   .wrapper-contact .contact-extra {
     float: left;
     display: block;
@@ -405,7 +421,7 @@ Contact
     text-align: center; }
     .wrapper-contact .contact-extra:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 667px) {
+    @media screen and (min-width: 1104px) {
       .wrapper-contact .contact-extra {
         float: left;
         display: block;
