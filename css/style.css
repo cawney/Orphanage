@@ -422,32 +422,42 @@ Contact
 /******************************************************************************
 Donation
 ******************************************************************************/
-.wrapper-donate button {
-  width: 100%;
-  margin-bottom: 25px; }
-  @media screen and (min-width: 1104px) {
-    .wrapper-donate button {
-      max-width: 75%;
-      margin-left: auto;
-      margin-right: auto; }
-      .wrapper-donate button::after {
-        clear: both;
-        content: "";
-        display: table; } }
-.wrapper-donate ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-.wrapper-donate li {
-  height: 150px;
-  width: 150px;
-  margin: 15px;
-  background: tomato;
-  padding-left: 50px; }
-  .wrapper-donate li a {
-    text-align: center;
-    color: #efefef;
-    font-size: 1.125em; }
+.wrapper-donate {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper-donate::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper-donate button {
+    width: 100%;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 1104px) {
+      .wrapper-donate button {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-right: auto; }
+        .wrapper-donate button::after {
+          clear: both;
+          content: "";
+          display: table; } }
+  .wrapper-donate ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .wrapper-donate li {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    background: tomato;
+    padding-left: 50px; }
+    .wrapper-donate li a {
+      text-align: center;
+      color: #efefef;
+      font-size: 1.125em; }
 
 /******************************************************************************
 Mission

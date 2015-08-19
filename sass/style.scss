@@ -201,7 +201,7 @@ About
 	}
 
 	hr {
-		@include span-columns(12);
+		@include span-columns(12); //Makes it take up a row by itself and not be shared with anything else
 	}
 
 	.promo-info {
@@ -299,13 +299,16 @@ Donation
 
 
 .wrapper-donate {
-	//background: steelblue;
+	
+	@include outer-container;
 	button {
 		@include fill-parent;
 		margin-bottom: 25px;
 		//Media Query
 		@media screen and (min-width: $tablet) {
-			@include outer-container(75%);
+			@include outer-container(50%);
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 	
