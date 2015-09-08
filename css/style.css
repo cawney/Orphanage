@@ -261,7 +261,7 @@ nav {
   font-family: "Raleway", "sans-serif";
   box-shadow: 0 8px 6px -6px #333; }
   nav .nav-title {
-    padding-top: 30px;
+    padding-top: 15px;
     text-align: center;
     font-size: 2.5em; }
     nav .nav-title a {
@@ -270,9 +270,7 @@ nav {
         color: #bcbcbc; }
 
 .navbar {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  text-align: center; }
   .navbar li {
     display: inline-block;
     padding: 10px; }
@@ -285,15 +283,19 @@ nav {
 Index.html
 ******************************************************************************/
 .main-slider-bg {
-  height: 500px;
-  background: url(../img/sand.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background: url(../img/casa.jpg) no-repeat center center fixed;
   background-size: cover; }
 
 .main-slider-overlay {
-  background: transparent;
+  background: rgba(51, 51, 51, 0.3);
   margin: auto;
-  padding-top: 50px;
-  text-align: center; }
+  padding-top: 25vh;
+  text-align: center;
+  padding-bottom: 50px; }
+
+.wrapper-index {
+  color: #efefef; }
 
 /******************************************************************************
 About

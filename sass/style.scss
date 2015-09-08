@@ -127,8 +127,7 @@ nav {
 	box-shadow: 0 8px 6px -6px #333;
 
 	.nav-title {
-
-		padding-top: 30px;
+		padding-top: 15px;
 		text-align: center;
 		font-size: 2.5em;
 
@@ -138,14 +137,10 @@ nav {
 				color: darken($white, 20%);
 			}
 		}
-		
 	}
 }
 .navbar {
 	text-align: center;
-
-	padding-top: 15px;
-	padding-bottom: 15px;
 	
 	li {
 		display: inline-block;
@@ -168,18 +163,22 @@ Index.html
 
 
 .main-slider-bg {
-
-	height: 500px;
-	background: url(../img/sand.jpg) no-repeat center center fixed;
+	height: 100vh;
+	background: url(../img/casa.jpg) no-repeat center center fixed;
 	background-size: cover;
 
 }
 
 .main-slider-overlay {
-	background: transparent;
+	background: rgba(#333, .3);
 	margin: auto;
-	padding-top: 50px;
+	padding-top: 25vh;
 	text-align: center;
+	padding-bottom: 50px;
+}
+
+.wrapper-index {
+	color: $white;
 }
 
 
