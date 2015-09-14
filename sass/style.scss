@@ -16,6 +16,7 @@ Colors
 $white: #efefef;
 $black: #444;
 
+
 //Color Uses
 $bg: $white;
 $bg-dark: $black;
@@ -50,7 +51,11 @@ body {
 .wrapper-content {
 	width: 95%;
 	margin: 0 auto;
-	margin-top: 50px;
+	//margin-top: 50px;
+}
+
+.hidden {
+	display: none;
 }
 
 //Fonts
@@ -126,6 +131,8 @@ nav {
 	font-family: $sans-serif, 'sans-serif';
 	box-shadow: 0 8px 6px -6px #333;
 
+	margin-bottom: 0px;
+
 	.nav-title {
 		padding-top: 15px;
 		text-align: center;
@@ -137,10 +144,35 @@ nav {
 				color: darken($white, 20%);
 			}
 		}
-	}
+	} //.nav-title
+
+	.dropdown-menu {
+
+		@include media(min-width $phone-ls) {
+			display: none; //Hides mobile dropdown option, if the phone is larger than the $phone-ls breakpoint
+		}
+		a {
+			text-align: right;
+			color: $white;
+			margin-right: 20px;
+		}
+		
+		.mobile-nav {
+			background: tomato;
+			text-align: center;
+			//display: hidden;
+			li {
+				padding-bottom: 10px;
+			}
+		}
+	} //.dropdown-menu
 }
 .navbar {
 	text-align: center;
+
+	@include media(max-width $phone-ls) {
+		display: none;
+	}
 	
 	li {
 		display: inline-block;
@@ -162,23 +194,28 @@ Index.html
 
 
 
-.main-slider-bg {
+.main-bg {
 	height: 100vh;
 	background: url(../img/casa.jpg) no-repeat center center fixed;
+	
+	top: 1px;
 	background-size: cover;
+	
 
 }
 
-.main-slider-overlay {
+.main-overlay {
 	background: rgba(#333, .3);
-	margin: auto;
-	padding-top: 25vh;
-	text-align: center;
-	padding-bottom: 50px;
+	margin: 0 auto;
+	height: 100%;
+	
 }
 
 .wrapper-index {
 	color: $white;
+	padding-top: 1vh;
+	text-align: center;
+	//padding-bottom: 50px;
 }
 
 

@@ -1,1 +1,1 @@
-console.log("Hello");
+$(".dropdown-btn").click(function(){$(".mobile-nav").slideToggle("slow")}),console.log("Hello");

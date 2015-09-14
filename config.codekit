@@ -47,7 +47,7 @@
 		"outputAbbreviatedPath": "\/img\/casa.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/classroom.jpg": {
 		"fileType": 16384,
@@ -58,7 +58,7 @@
 		"outputAbbreviatedPath": "\/img\/classroom.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/ocean.jpg": {
 		"fileType": 16384,
