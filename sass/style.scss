@@ -160,7 +160,6 @@ nav {
 		.mobile-nav {
 			background: tomato;
 			text-align: center;
-			//display: hidden;
 			li {
 				padding-bottom: 10px;
 			}
@@ -200,6 +199,7 @@ Index.html
 	
 	top: 1px;
 	background-size: cover;
+
 	
 
 }
@@ -343,13 +343,14 @@ Donation
 
 .wrapper-donate {
 	
-	@include outer-container;
+	@include fill-parent;
 	button {
 		@include fill-parent;
 		margin-bottom: 25px;
-		//Media Query
-		@media screen and (min-width: $tablet) {
-			@include outer-container(50%);
+		margin-top: 25px;
+		//Media Query Table and Bigger
+		@include media (min-width $phone-ls) {
+			width: 50%;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -362,15 +363,24 @@ Donation
 	}
 
 	li {
-		height: 150px;
-		width: 150px;
-		margin: 15px;
-		background: tomato;
-		padding-left: 50px;
+		height: 100px;
+		width: 100px;
+		margin: 5px;
+		background: darken($bg, 15%);
+
+		text-align: center;
 		a {
 			text-align: center;
-			color: $white;
+			color: $black;
 			font-size: 1.125em;
+		}
+	}
+
+	.volunteer-signup {
+		width: 100%;
+		height: 32px;
+		option {
+			height: 32px;
 		}
 	}
 }

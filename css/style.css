@@ -460,41 +460,35 @@ Contact
 Donation
 ******************************************************************************/
 .wrapper-donate {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .wrapper-donate::after {
-    clear: both;
-    content: "";
-    display: table; }
+  width: 100%; }
   .wrapper-donate button {
     width: 100%;
-    margin-bottom: 25px; }
-    @media screen and (min-width: 1104px) {
+    margin-bottom: 25px;
+    margin-top: 25px; }
+    @media screen and (min-width: 667px) {
       .wrapper-donate button {
-        max-width: 50%;
+        width: 50%;
         margin-left: auto;
-        margin-right: auto;
-        margin-left: auto;
-        margin-right: auto; }
-        .wrapper-donate button::after {
-          clear: both;
-          content: "";
-          display: table; } }
+        margin-right: auto; } }
   .wrapper-donate ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
   .wrapper-donate li {
-    height: 150px;
-    width: 150px;
-    margin: 15px;
-    background: tomato;
-    padding-left: 50px; }
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background: #c9c9c9;
+    text-align: center; }
     .wrapper-donate li a {
       text-align: center;
-      color: #efefef;
+      color: #444;
       font-size: 1.125em; }
+  .wrapper-donate .volunteer-signup {
+    width: 100%;
+    height: 32px; }
+    .wrapper-donate .volunteer-signup option {
+      height: 32px; }
 
 /******************************************************************************
 Mission
