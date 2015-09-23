@@ -1,1 +1,1 @@
-$(".dropdown-btn").click(function(){$(".mobile-nav").slideToggle("slow")}),console.log("Hello");
+$(".dropdown-btn").click(function(){console.log("Begin Function"),$(".mobile-nav").addClass("animated"),$(".mobile-nav").toggleClass("bounceInDown","bounceOutUp"),$(".mobile-nav").toggleClass("hidden"),console.log("End Function")}),console.log("Hello");
