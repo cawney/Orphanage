@@ -15,12 +15,36 @@ $(".dropdown-btn").click(function() {
 
 
 $(".dropdown-btn").click(function() {
-		console.log("Begin Function");
+		
 		$('.mobile-nav').addClass("animated"); //Needed for base to make animated
 		$('.mobile-nav').toggleClass("bounceInDown", "bounceOutUp"); //Adds the animation
 		$(".mobile-nav").toggleClass("hidden"); //changes from hidden to showing
 		
-		console.log('End Function');
+});
+
+
+
+//Get Text from the select form
+//Append the text to the subject line
+
+
+
+/*
+$(".volunteer-signup").focusout(function() {
+	console.log("Begin Function");
+	alert("Stuff");
+	var a = $("option:selected").text(); //Works only when there is an alert before it? Might be due to the "click" function
+	console.log(a);
+	console.log('End Function');
+});
+*/
+
+$(".volunteer-email").click(function(){
+		console.log("Begin function");
+		var a = $(".volunteer-signup option:selected").text(); //Works when you click the email button
+		console.log(a); //Need to append the value to the href, subject line
+		console.log("End Function");
+		
 });
 
 
