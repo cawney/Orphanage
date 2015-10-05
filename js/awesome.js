@@ -39,12 +39,23 @@ $(".volunteer-signup").focusout(function() {
 });
 */
 
-$(".volunteer-email").click(function(){
-		console.log("Begin function");
-		var a = $(".volunteer-signup option:selected").text(); //Works when you click the email button
-		console.log(a); //Need to append the value to the href, subject line
+//$(".volunteer-email").click(function(){
+//		console.log("Begin function");
+//		var a = $(".volunteer-signup option:selected").text(); //Works when you click the email button
+//		console.log(a); //Need to append the value to the href, subject line
+//		
+//		console.log("End Function");
+//		//Maybe... Make the "Email" section hidden, but when you click on the function the email will be appended on
+//		
+//});
+//
+
+$(".volunteer-signup").change(function(){
+		console.log("Begin Function");
+		var a = $("option:selected").val();
+		console.log(a);
+		$(".volunteer").append("I'm Here!");
 		console.log("End Function");
-		
 });
 
 
